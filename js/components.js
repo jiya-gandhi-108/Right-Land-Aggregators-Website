@@ -9,6 +9,7 @@ function headerHTML(active) {
     ["services.html", "Services"],
     ["process.html", "Process"],
     ["industries.html", "Industries"],
+    ["partners.html", "Partners"],
     ["why-us.html", "Why Us"],
     ["faq.html", "FAQ"],
     ["contact.html", "Contact"],
@@ -26,7 +27,6 @@ function headerHTML(active) {
           `<li><a href="${href}" ${active === href ? 'class="active" aria-current="page"' : ""}>${label}</a></li>`).join("")}
       </ul>
       <div class="nav-actions">
-        <a class="nav-login" href="#">Client Dashboard</a>
         <a class="btn btn-gold nav-cta" href="contact.html">Get Started <span class="arrow">→</span></a>
         <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
           <span></span><span></span><span></span>
@@ -65,6 +65,7 @@ function footerHTML() {
             <li><a href="about.html">About</a></li>
             <li><a href="process.html">Process</a></li>
             <li><a href="industries.html">Industries</a></li>
+            <li><a href="partners.html">Partners &amp; Associations</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="contact.html#landowners">List Your Land</a></li>

@@ -815,3 +815,22 @@ strong{font-weight:700;color:var(--green-deep)}
 .contact-info{min-width:0}
 .owner-band{min-width:0}
 .owner-band > div{min-width:0}
+
+/* ---------- Association invite band (home) ---------- */
+.assoc-band{
+  background:linear-gradient(135deg,#fff 0%,var(--gold-soft) 160%);
+  border:1px solid rgba(244,163,0,.35);
+  border-left:5px solid var(--gold);
+  border-radius:var(--radius);
+  padding:var(--s45);
+  display:grid;grid-template-columns:1.4fr 1fr;
+  gap:var(--s36);align-items:center;
+}
+.assoc-band-cta{display:flex;flex-direction:column;gap:var(--s18)}
+.assoc-band-cta .btn{justify-content:center}
+@media (max-width:768px){
+  .assoc-band{grid-template-columns:1fr;padding:var(--s27) var(--s18)}
+}
+
+/* partner pills carry two-line labels */
+.pill span{min-width:0}
