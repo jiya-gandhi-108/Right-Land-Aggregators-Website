@@ -32,6 +32,7 @@
 
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
+html,body{overflow-x:hidden;max-width:100%}
 body{
   font-family:var(--font-body);
   font-size:18px;
@@ -145,7 +146,7 @@ strong{font-weight:700;color:var(--green-deep)}
 .hero-grid{
   display:grid;grid-template-columns:1.1fr .9fr;
   gap:var(--s54);align-items:center;
-  padding:var(--s72) 0 var(--s54);
+  padding-top:var(--s72);padding-bottom:var(--s54);
 }
 .hero h1{font-size:63px;line-height:1.12;margin:var(--s18) 0}
 .hero h1 .gold{color:var(--gold)}
@@ -701,7 +702,7 @@ strong{font-weight:700;color:var(--green-deep)}
   .nav-actions{gap:var(--s9)}
 
   /* hero */
-  .hero-grid{padding:var(--s45) 0 var(--s36);gap:var(--s36)}
+  .hero-grid{padding-top:var(--s36);padding-bottom:var(--s36);gap:var(--s36)}
   .hero-sub{font-size:17px}
   .hero-ctas{flex-direction:column;align-items:stretch}
   .hero-ctas .btn{justify-content:center;text-align:center}
