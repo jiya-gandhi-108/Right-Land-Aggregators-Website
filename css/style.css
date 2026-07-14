@@ -112,10 +112,10 @@ strong{font-weight:700;color:var(--green-deep)}
 .nav-inner{
   display:flex;align-items:center;justify-content:space-between;
   padding:var(--s18) var(--s27);
-  max-width:1332px;margin:0 auto;
+  max-width:1572px;margin:0 auto;
 }
 .brand{display:flex;align-items:center;gap:var(--s9)} /* NW — top-left */
-.brand-mark{width:auto;height:52px;flex-shrink:0;object-fit:contain}
+.brand-mark{width:auto;height:65px;flex-shrink:0;object-fit:contain}
 .brand-name{font-family:var(--font-head);font-weight:700;font-size:18px;color:var(--green);line-height:1.15}
 .brand-name small{display:block;font-size:11px;font-weight:500;color:var(--terra);letter-spacing:.09em;text-transform:uppercase}
 
