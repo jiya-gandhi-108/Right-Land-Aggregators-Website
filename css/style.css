@@ -792,3 +792,26 @@ strong{font-weight:700;color:var(--green-deep)}
   .btn{min-height:45px}
   .faq-q{min-height:54px}
 }
+
+/* ---------- Contact form overflow fix ----------
+   Selects/inputs size themselves to their longest content (the new long
+   dropdown options), pushing past the viewport on mobile. Constrain all
+   form controls and grid children so nothing exceeds its column. */
+.contact-grid > *{min-width:0}
+.form-card{min-width:0;max-width:100%}
+.form-grid{min-width:0}
+.field{min-width:0}
+.field input,.field select,.field textarea{width:100%;min-width:0;max-width:100%}
+.field textarea{resize:vertical}
+.field select{
+  appearance:none;-webkit-appearance:none;
+  background-image:linear-gradient(45deg,transparent 50%,var(--green) 50%),linear-gradient(135deg,var(--green) 50%,transparent 50%);
+  background-position:calc(100% - 21px) 50%,calc(100% - 15px) 50%;
+  background-size:6px 6px,6px 6px;
+  background-repeat:no-repeat;
+  padding-right:var(--s36);
+  text-overflow:ellipsis;
+}
+.contact-info{min-width:0}
+.owner-band{min-width:0}
+.owner-band > div{min-width:0}
