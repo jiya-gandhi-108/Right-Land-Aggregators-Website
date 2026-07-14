@@ -673,3 +673,121 @@ strong{font-weight:700;color:var(--green-deep)}
   font-size:11px;font-weight:700;
   display:flex;align-items:center;justify-content:center;
 }
+
+/* ============================================================
+   MOBILE RESPONSIVE — comprehensive pass (all pages)
+   ============================================================ */
+
+@media (max-width:1024px){
+  .check-list.two-col{grid-template-columns:1fr 1fr}
+  .svc-block{padding:var(--s36)}
+  .compare{min-width:594px} /* keeps two columns readable inside the scroll wrapper */
+}
+
+@media (max-width:768px){
+  /* base rhythm */
+  .container{padding:0 var(--s18)}
+  .section{padding:var(--s54) 0}
+  body{font-size:16px}
+  p{max-width:none}
+
+  /* announcement + navbar */
+  .announce{font-size:12px;padding:7px var(--s9)}
+  .nav-inner{padding:var(--s9) var(--s18)}
+  .brand-mark{height:40px}
+  .brand-name{font-size:15px}
+  .brand-name small{font-size:9px}
+  .nav-cta{padding:7px var(--s18);font-size:13px}
+  .nav-actions{gap:var(--s9)}
+
+  /* hero */
+  .hero-grid{padding:var(--s45) 0 var(--s36);gap:var(--s36)}
+  .hero-sub{font-size:17px}
+  .hero-ctas{flex-direction:column;align-items:stretch}
+  .hero-ctas .btn{justify-content:center;text-align:center}
+  .trust-strip ul{gap:var(--s9) var(--s18);justify-content:flex-start}
+  .trust-strip li{font-size:12px}
+
+  /* dashboard file card */
+  .file-card{padding:var(--s18)}
+  .fc-title{font-size:18px}
+  .fc-milestones strong{font-size:14px}
+  .fc-milestones small{font-size:12px}
+  .fc-complete{width:36px;height:36px;font-size:16px}
+
+  /* handover card (about) */
+  .handover-card{padding:var(--s18);margin:0 auto}
+  .ho-checks li{font-size:12px}
+
+  /* content blocks */
+  .section-head{margin-bottom:var(--s27)}
+  .eyebrow{font-size:12px}
+  .pain-punch{font-size:17px;padding:var(--s18)}
+  .solution-punch{font-size:18px}
+  .chain-row{flex-direction:column;gap:var(--s9);padding:var(--s18)}
+  .chain-row .chip{min-width:0}
+  .card{padding:var(--s27) var(--s18)}
+  .phase{padding:var(--s27) var(--s18)}
+  .stat .num{font-size:54px}
+  .stat{padding:var(--s18) var(--s9)}
+  .stats{gap:var(--s9)}
+
+  /* services page */
+  .svc-block{padding:var(--s27) var(--s18);margin-bottom:var(--s27)}
+  .svc-block h2{font-size:22px;flex-wrap:wrap}
+  .svc-block h2 svg{width:36px;height:36px}
+  .check-list.two-col{grid-template-columns:1fr}
+  .svc-block > div[style*="text-align:right"]{text-align:center!important}
+  .svc-block .btn{width:100%;justify-content:center}
+
+  /* about page */
+  .mission-band{padding:var(--s27) var(--s18);gap:var(--s27)}
+  .pill{padding:var(--s18)}
+
+  /* section CTAs: full-width centred buttons */
+  .section .btn{max-width:100%}
+  .cta-final .hero-ctas .btn{width:100%}
+
+  /* contact page — form first on mobile, office details after */
+  .contact-grid{gap:var(--s36)}
+  .contact-grid > .reveal.d2{order:-1}
+  .form-card{padding:var(--s27) var(--s18)}
+  .scope-row{flex-direction:column;align-items:stretch}
+  .owner-band{padding:var(--s27) var(--s18);flex-direction:column;align-items:flex-start}
+  .owner-band .btn{width:100%;justify-content:center}
+  .map-ph{height:180px}
+
+  /* faq */
+  .faq-q{font-size:16px;padding:var(--s18)}
+  .faq-a p{padding:0 var(--s18) var(--s18)}
+
+  /* footer */
+  .footer-tagline{font-size:18px;padding:var(--s27) var(--s18) 0}
+  .footer-grid{padding:var(--s27) 0 var(--s36);gap:var(--s27)}
+  .footer-brand .brand-mark{height:54px}
+  .ribbon li:not(:last-child)::after{content:"";margin:0}
+  .ribbon ul{gap:var(--s9) var(--s18);justify-content:flex-start}
+  .ribbon li{font-size:11px}
+
+  /* floating call button */
+  .float-cta{width:54px;height:54px;right:var(--s18);bottom:var(--s18)}
+  .float-cta svg{width:26px;height:26px}
+}
+
+@media (max-width:400px){
+  h1,.hero h1{font-size:30px}
+  .page-hero h1{font-size:27px}
+  h2,.cta-final h2{font-size:24px}
+  .nav-cta{padding:6px var(--s9);font-size:12px}
+  .nav-cta .arrow{display:none}
+  .brand-name small{display:none}
+  .stat .num{font-size:45px}
+  .fc-chip{font-size:12px}
+}
+
+/* comfortable tap targets on touch devices */
+@media (pointer:coarse){
+  .nav-links a{padding:var(--s9) 0;min-height:44px;display:flex;align-items:center}
+  .btn{min-height:45px}
+  .faq-q{min-height:54px}
+}
